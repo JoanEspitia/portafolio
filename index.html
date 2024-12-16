@@ -4,10 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            background-color: #555;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            display: inline-block;
+        }
+        article h3 {
+            margin: 10px 0 5px;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 10px 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        .contact a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <!-- Imagen de perfil -->
+        <img src="fotorec.jpg" alt="" width="200px" height="200px">
         <h1>Joan Rodriguez Espitia</h1>
         <p>Practicante Ing. Sistemas Computacionales | SQL | Dev Junior</p>
     </header>  
@@ -80,21 +154,6 @@
             <h2>Contacto</h2>
             <p> Correo electrónico: <a href="mailto:joanre20@gmail.com">joanre20@gmail.com</a></p>
             <p> LinkedIn: <a href="https://mx.linkedin.com/" target="_blank">Mi perfil</a></p>
-            <form>
-                <div>
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text" id="Nombre" name="Nombre" required>
-                </div>
-                <div>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="Mensaje">Mensaje:</label>
-                    <textarea id="Mensaje" name="Mensaje" rows="4"></textarea>
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
         </section>
     </main>
     <footer>
