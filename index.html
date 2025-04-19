@@ -3,87 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-        }
-        header h1 {
-            margin: 0;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-        }
-        nav {
-            background-color: #555;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            padding: 20px;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        section h2 {
-            margin-bottom: 10px;
-            border-bottom: 2px solid #333;
-            display: inline-block;
-        }
-        article h3 {
-            margin: 10px 0 5px;
-        }
-        ul {
-            list-style-type: disc;
-            margin: 10px 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-        }
-        .contact a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">    <title>Porfafolio</title>
 </head>
 <body>
     <header>
         <img src="fotorec.jpg" alt="" width="200px" height="200px">
         <h1>Joan Rodriguez Espitia</h1>
-        <p>Practicante Ing. Sistemas Computacionales | SQL | Dev Junior</p>
+        <p>Ing. Sistemas Computacionales</p>
+        <button id="toggleTheme">🌙 Cambiar tema</button>
     </header>  
     <nav>
         <ul>
@@ -96,59 +26,164 @@
         </ul>
     </nav>
     <main>
-        <section id="Sobre-mi">
-            <h2>Sobre mí</h2>
+        <section id="Sobre-mi" class="centro">
+            <div id="sm"> 
+                <h2>Sobre mí</h2>
             <p>
-                Soy un apasionado por la tecnología y el desarrollo de soluciones innovadoras. Me destaco por mi enfoque en
-                optimización de procesos y manejo de datos. Facilidad de adaptacion e interes por aprender nuevas Herramientas.
+Ingeniero en Sistemas con experiencia en soporte técnico y conocimientos en programación. 
+Especializado en la resolución deproblemas de hardware y software, 
+administración de sistemas operativos y atención al usuario. 
+Con habilidades en desarrollo desoftware, bases de datos y automatización de procesos. 
+Enfocado en la optimización de soluciones tecnológicas y la mejora
+continua para garantizar un alto rendimiento en los sistemas de TI.
             </p>
+        </div>
         </section>
-        <section id="Experiencia">
+        <section id="Experiencia" class="centro">
+            <div id="xp">
             <h2>Experiencia</h2>
-            <article>
-                <h3>Desarrollo Data Management/Infraestructura</h3>
-                <p><strong>Flensa</strong> | Julio 2024 - Presente</p>
-                <ul>
-                    <li>Desarrollo de Business Intelligence</li>
-                    <li>Recolección de datos</li>
-                    <li>Optimización de procesos</li>
-                    <li>Atencion al cliente</li>
-                    <li>Soporte y Mantenimiento de equipo</li>
-                    <li>Soporte de redes</li>
-                </ul>
+            <div>
+                <div class="experiencia">
+                <h3>Estadia Profesional // practicante soporte tecnico.</h3>
+                <p><strong>Flensa</strong> | Julio 2024 - Enero 2025</p>
+                <ol>
+                    
+                    <li>Soporte técnico y mantenimiento de equipos de cómputo
+                        <ul>
+                            <li>Instalación y Configuración de Hardware y Software. </li>
+                            <li>Soporte Técnico a Usuarios.</li>
+                            <li>Mantenimiento Preventivo y Correctivo. </li>
+                        </ul>
+                    </li>
+                    
+                    <li>Gestión de Infraestructura y Redes:
+                        <ul>
+                            <li>Administración Básica de Redes.</li>
+                            <li>Implementación de Soluciones de Respaldo.</li>
+                            <li>Gestión de Inventarios de TI.</li>
+                        </ul>
+                    </li>
+                    
+                    <li>Capacitación y Mejora Continua:
+                        <ul>
+                            <li>Capacitación a Usuarios.</li>
+                            <li>Documentación de Procesos.</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+            <article>    
+                <div class="experiencia">
+                <h3>Subjefe de servicio a domicilio.</h3>
+                <p><strong>Bodega Aurrera</strong> | Julio 2023 - Marzo 2024</p>
+                <ol>
+                    <li>Gestión Operativa:
+                        <ul>
+                            <li>Coordinar las rutas de entrega para optimizar tiempos y costos.</li>
+                            <li>Supervisar la preparación y empaque de los pedidos.</li>
+                            <li>Asegurar el cumplimiento de los tiempos de entrega.</li>
+                            <li>Gestionar la disponibilidad de vehículos</li>
+                        </ul>
+                    </li>
+
+                    <li>Atención al Cliente:
+                        <ul>
+                            <li>Resolver problemas relacionados con pedidos (productos faltantes, retrasos, etc.)</li>
+                            <li>Atender quejas y sugerencias para mejorar el servicio.</li>
+                            <li>Mantener comunicación con los clientes para brindar actualizaciones sobre sus entregas.</li>
+                        </ul>
+                    </li>
+
+                    <li>Supervisión de Personal:
+                        <ul>
+                            <li>Dirigir y capacitar a repartidores y personal de preparación de pedidos.</li>
+                            <li>Asignar tareas y turnos para asegurar una operacióneficiente.</li>
+                            <li>Evaluar el desempeño del equipo</li>
+                        </ul>
+                    </li>
+
+                    <li>Administración y Reportes:
+                        <ul>
+                            <li>Controlar el inventario de productos destinados a entregas.</li>
+                            <li>Elaborar reportes de eficiencia en entregas y satisfacción delcliente.</li>
+                            <li>Colaborar con otros departamentos para mejorar procesos.</li>
+                            <li>Manejo de inventario en stock</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </li>
+
+                </ol>
+            </div>
             </article>
+        </div>
         </section>
-        <section id="Educacion">
-            <h2>Educación</h2>
+        <section id="Educacion" class="centro">
+            <div><h2>Educación</h2>
             <p>
                 <strong>Ingeniería en Sistemas Computacionales</strong> - Universidad Virtual del Estado de Guanajuato (2021 - Presente)
             </p>
+        </div>
+        <div>
+            <h2>Educacion Continua</h2>
+            <p>
+                <strong>Curso Master en Frontend</strong> - Dev.f (noviembre 2024 - Presente) 
+            </p>
+            <p>
+                <strong>Curso Programacion Fullstack</strong> - Udemy (Enero 2025 - Presente)
+            </p>
+            <p><strong>Introduction to Generative AI Learning Path</strong> - GoogleCloud (marzo  2025)
+            </p>
+        </div>
         </section>
-        <section id="Habilidades">
+        <section id="Habilidades" class="centro">
             <h2>Habilidades</h2>
             <ul>
-                <li>Lenguajes de programación: Phyton, Java, javascript, css</li>
-                <li>SQL y manejo de bases de datos</li>
-                <li>Herramientas de análisis de datos</li>
+                <li>Base de datos y caché.</li>
+                <li>Soporte Tecnico</li>
+                <li>Control de versiones (Git, GitHub)</li>
                 <div>
-                    <h1>Programas</h1>
+                    <h1>Lenguajes de programación.</h1>
                     <ol>
-                        <li>Studio T3</li>
-                        <li>apache Neatbeans</li>
-                        <li>MySQL</li>
-                        <li>PandoraFMS</li>
-                        <li>Wireshark</li>
-
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Power BI</li>
+                        <li>PHP</li>
+                        <li>Java</li>
+                        <li>C#</li>
+                        <li>Python</li>
+                        <li>SQL</li>
                     </ol>
                 </div>
             </ul>
         </section>
-        <section id="Proyectos">
+        <section id="Proyectos" class="centro">
             <h2>Proyectos</h2>
             <h3>Power BI "Plantilla activa vs Presupuesto"</h3>
-            <p>Proyecto de analisis de datos enfocado en presentar de manera rapida y eficaz la platilla de empleados activos
-                provenientes de la base de datos ofreciendo la oportunidad de los usuarios de llevar su registo mensual sobre los empleados autorizados
-            </p>
+            <h4>Objetivo del Proyecto </h4>
+            <p>principal comparar la plantilla de personal activa con la plantilla autorizada según el presupuesto, permitiendo identificar posibles desviaciones en la dotación de recursos humanos. A través del análisis y visualización de datos, se busca proporcionar información clara y actualizada para la toma de decisiones estratégicas en la gestión del personal.</p>
+            <h4>Descripción del Proyecto</h4>
+            <p>El proyecto consiste en la creación de un informe interactivo en Power BI que muestra la comparación entre la plantilla activa y la plantilla autorizada según el presupuesto. Se utilizan gráficos y tablas para visualizar las diferencias y tendencias a lo largo del tiempo, facilitando así la identificación de áreas que requieren atención o ajuste.</p>
+            <h4>Herramientas Utilizadas</h4>
+            <ul>
+                <li>Power BI</li>
+                <li>SQL</li>
+                <li>Excel</li>  
+            </ul>
+            <h4>Habilidades presentadas</h4>
+            <ul>
+                <li>Desarrollo de informes interactivos en Power BI.</li>
+                <li>Diseño y desarrollo de informes personalizados.</li>
+                <li>Conexión y transformación de datos desde diferentes fuentes.</li>
+                <li>Creación de visualizaciones efectivas para la toma de decisiones.</li>
+                <li>Colaboración en equipo para el desarrollo del proyecto.</li>
+            </ul>
         </section>
         <section id="Contacto" class="contact">
             <h2>Contacto</h2>
@@ -159,5 +194,7 @@
     <footer>
         <p>&copy; 2024 Joan Rodriguez Espitia. Todos los derechos reservados.</p>
     </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
